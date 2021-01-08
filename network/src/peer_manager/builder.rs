@@ -20,7 +20,7 @@ use diem_config::{
 use diem_crypto::x25519;
 use diem_infallible::RwLock;
 use diem_logger::prelude::*;
-use diem_metrics::IntCounterVec;
+use diem_metrics::{register_histogram_vec, IntCounterVec};
 use diem_network_address::NetworkAddress;
 use diem_rate_limiter::rate_limit::TokenBucketRateLimiter;
 use diem_types::{chain_id::ChainId, PeerId};
@@ -464,12 +464,18 @@ fn token_bucket_rate_limiter(
     input: Option<RateLimitConfig>,
 ) -> TokenBucketRateLimiter<IpAddr> {
     if let Some(config) = input {
+        let metrics = register_histogram_vec!(
+            "diem_network_rate_limit_test",
+            "Network Rate Limiting Metrics",
+            &["direction", "key", "metric"]
+        )
+        .unwrap();
         TokenBucketRateLimiter::new(
             label,
             config.initial_bucket_fill_percentage,
             config.ip_byte_bucket_size,
             config.ip_byte_bucket_rate,
-            None,
+            Some(metrics),
         )
     } else {
         TokenBucketRateLimiter::open(label)
