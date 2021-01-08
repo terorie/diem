@@ -2955,10 +2955,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@libra-opensource/diem-cli@^0.7.12":
-  version "0.7.12"
-  resolved "https://registry.yarnpkg.com/@libra-opensource/diem-cli/-/diem-cli-0.7.12.tgz#644c513e62667434994a94cb145884bcef872ead"
-  integrity sha512-v7TrQ/GQIxTyDtgPvo8o17G9yC3SNjYNBs8tzE0YlCO/mlasbdnSzzJ0eo3kjEr8KPSmeFWM9tvAwKaKKP3WWA==
+"@libra-opensource/diem-cli@^0.7.13":
+  version "0.7.13"
+  resolved "https://registry.yarnpkg.com/@libra-opensource/diem-cli/-/diem-cli-0.7.13.tgz#23a18602b1743d423b87fbde755719a051c61d4d"
+  integrity sha512-DMzm46pGqwWVtptFCVzGjm/E7jbdtFq2Yhm9iNSVYvudcwQwG1J9B1KFm6waM31CFSXfFfY+57ZiFcK1BOZt3Q==
   dependencies:
     "@libra-opensource/libra-client-sdk-typescript" "1.0.4"
     json-bigint "^1.0.0"
@@ -2969,20 +2969,6 @@
     xterm-addon-fit "^0.4.0"
     xterm-dfuzr "^4.9.1"
     yargs-parser "^19.0.1"
-
-"@libra-opensource/libra-client-sdk-typescript@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@libra-opensource/libra-client-sdk-typescript/-/libra-client-sdk-typescript-1.0.2.tgz#775b2082060d6020061a015eddd9ad9c4778f1ab"
-  integrity sha512-bqBZzSftR3LmpCl2RMo8+Z8ad/PpC8NsErwtgE+kLMD7l0e9v+vurT1FzLXoGbjEHFGRkms4IVFPEz7av8cSag==
-  dependencies:
-    axios "^0.19.2"
-    bech32 "^1.1.4"
-    bip39 "^3.0.2"
-    elliptic "^6.5.3"
-    json-bigint "^1.0.0"
-    sha3 "^2.1.3"
-    ts-proto "^1.37.0"
-    util "^0.12.3"
 
 "@libra-opensource/libra-client-sdk-typescript@1.0.4":
   version "1.0.4"
@@ -11792,9 +11778,9 @@ prism-react-renderer@^1.1.1:
   integrity sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==
 
 prismjs@^1.20.0:
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
-  integrity sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
   optionalDependencies:
     clipboard "^2.0.0"
 
